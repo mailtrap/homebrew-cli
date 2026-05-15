@@ -5,21 +5,21 @@
 class Mailtrap < Formula
   desc "CLI for the Mailtrap email delivery platform"
   homepage "https://github.com/mailtrap/mailtrap-cli"
-  version "0.2.3"
+  version "0.3.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/mailtrap/mailtrap-cli/releases/download/v0.2.3/mailtrap-cli_0.2.3_darwin_amd64.tar.gz"
-      sha256 "c27a18e3ae55369495420cd2e79b2a89ba276d6db04aa56b976f997f267eb037"
+      url "https://github.com/mailtrap/mailtrap-cli/releases/download/v0.3.0/mailtrap-cli_0.3.0_darwin_amd64.tar.gz"
+      sha256 "0400ed1266b328ccff6ed210478b10dc2da76ddd9c879985d4d0433fc1eca9a1"
 
       define_method(:install) do
         bin.install "mailtrap"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/mailtrap/mailtrap-cli/releases/download/v0.2.3/mailtrap-cli_0.2.3_darwin_arm64.tar.gz"
-      sha256 "8333f27675fdae557a03765a6e15cd3228779ca0d52608b7b622fd744cb965ed"
+      url "https://github.com/mailtrap/mailtrap-cli/releases/download/v0.3.0/mailtrap-cli_0.3.0_darwin_arm64.tar.gz"
+      sha256 "18386ecaa88bca7f317c70f68c899e5e62ae21d9d9896c7bd4ad37ee490a8ccf"
 
       define_method(:install) do
         bin.install "mailtrap"
@@ -29,15 +29,15 @@ class Mailtrap < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/mailtrap/mailtrap-cli/releases/download/v0.2.3/mailtrap-cli_0.2.3_linux_amd64.tar.gz"
-      sha256 "5fab25c65184439820beae582162dff18c8dd219047a6362b599fc894da78a79"
+      url "https://github.com/mailtrap/mailtrap-cli/releases/download/v0.3.0/mailtrap-cli_0.3.0_linux_amd64.tar.gz"
+      sha256 "936e82de3ca2b3a2f7ecbf5f47dbc15cce14bd2505c930aa39c15a4b223598db"
       define_method(:install) do
         bin.install "mailtrap"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/mailtrap/mailtrap-cli/releases/download/v0.2.3/mailtrap-cli_0.2.3_linux_arm64.tar.gz"
-      sha256 "b20c3fbffb8c870711086549dd8b74dc6a40890efb3402eb588bc39f634afca3"
+      url "https://github.com/mailtrap/mailtrap-cli/releases/download/v0.3.0/mailtrap-cli_0.3.0_linux_arm64.tar.gz"
+      sha256 "4a5058ff23fbd0d7bfe9c9eceb02eb692046913daa8c679996778bf3616618b7"
       define_method(:install) do
         bin.install "mailtrap"
       end
